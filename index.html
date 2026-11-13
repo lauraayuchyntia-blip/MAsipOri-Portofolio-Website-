@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MAsipOri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <!-- ───── HERO ───── -->
+    <header class="hero">
+      <div class="avatar-ring" aria-hidden="true"></div>
+      <h1 class="brand-name">MAsipOri</h1>
+      <p class="tagline">Creator · Content · Community</p>
+    </header>
+
+    <!-- ───── LINK CARDS ───── -->
+    <section class="links" aria-label="Social & Donate Links">
+
+      <!-- ══════════════════════════════════════
+           YOUTUBE
+           Isi username di script.js → USERNAMES.youtube
+           Contoh: youtube: "NamaChannelKamu"  (tanpa @)
+           ══════════════════════════════════════ -->
+      <a href="#LINK_YOUTUBE_KAMU_DI_SINI"
+         class="card card--youtube"
+         target="_blank"
+         rel="noopener noreferrer"
+         data-label="YouTube">
+        <span class="card__icon card__icon--avatar">
+          <!-- Foto profil diisi otomatis oleh script.js -->
+          <img id="yt-avatar"
+               class="profile-pic"
+               src=""
+               alt="YouTube"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <!-- Fallback SVG kalau foto gagal load -->
+          <span class="icon-fallback" style="display:none">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </span>
+        </span>
+        <span class="card__text">
+          <strong class="card__platform">YouTube</strong>
+          <span class="card__sub">Tonton video terbaru</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- ══════════════════════════════════════
+           TIKTOK
+           Isi username di script.js → USERNAMES.tiktok
+           Contoh: tiktok: "NamaAkunKamu"  (tanpa @)
+           ══════════════════════════════════════ -->
+      <a href="#LINK_TIKTOK_KAMU_DI_SINI"
+         class="card card--tiktok"
+         target="_blank"
+         rel="noopener noreferrer"
+         data-label="TikTok">
+        <span class="card__icon card__icon--avatar">
+          <!-- Foto profil diisi otomatis oleh script.js -->
+          <img id="tt-avatar"
+               class="profile-pic"
+               src=""
+               alt="TikTok"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <!-- Fallback SVG kalau foto gagal load -->
+          <span class="icon-fallback" style="display:none">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.19 8.19 0 0 0 4.79 1.53V6.74a4.85 4.85 0 0 1-1.02-.05z"/>
+            </svg>
+          </span>
+        </span>
+        <span class="card__text">
+          <strong class="card__platform">TikTok</strong>
+          <span class="card__sub">Follow konten sehari-hari</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- ══════════════════════════════════════
+           SAWERIA (Donate 1)
+           Isi link di script.js → LINKS.donate1
+           ══════════════════════════════════════ -->
+      <a href="#LINK_DONATE_1_KAMU_DI_SINI"
+         class="card card--donate1"
+         target="_blank"
+         rel="noopener noreferrer"
+         data-label="Saweria">
+        <span class="card__icon card__icon--brand card__icon--saweria">
+          <!-- Logo Saweria asli via Clearbit -->
+          <img src="https://logo.clearbit.com/saweria.co"
+               alt="Saweria"
+               class="brand-logo"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <!-- Fallback teks -->
+          <span class="icon-fallback icon-fallback--text" style="display:none">S</span>
+        </span>
+        <span class="card__text">
+          <strong class="card__platform">Saweria</strong>
+          <span class="card__sub">Support dengan donasi</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <!-- ══════════════════════════════════════
+           TRAKTEER (Donate 2)
+           Isi link di script.js → LINKS.donate2
+           ══════════════════════════════════════ -->
+      <a href="#LINK_DONATE_2_KAMU_DI_SINI"
+         class="card card--donate2"
+         target="_blank"
+         rel="noopener noreferrer"
+         data-label="Trakteer">
+        <span class="card__icon card__icon--brand card__icon--trakteer">
+          <!-- Logo Trakteer asli via Clearbit -->
+          <img src="https://logo.clearbit.com/trakteer.id"
+               alt="Trakteer"
+               class="brand-logo"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <!-- Fallback teks -->
+          <span class="icon-fallback icon-fallback--text" style="display:none">T</span>
+        </span>
+        <span class="card__text">
+          <strong class="card__platform">Trakteer</strong>
+          <span class="card__sub">Traktir sesuatu buat aku</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">↗</span>
+      </a>
+
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 MAsipOri — made with ♡</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
